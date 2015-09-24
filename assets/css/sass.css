@@ -1,33 +1,190 @@
-/*
-Error: The line was indented 7 levels deeper than the previous line.
-        on line 27 of sass.sass
+* {
+  margin: 0;
+  padding: 0;
+}
 
-22: 					width: 100%
-23: 					figure
-24: 						&#unicornio
-25: 							max-width: 250px
-26: <<<<<<< HEAD
-27: 							top: 300
-28: 							left: 600
-29: =======
-30: 							top: 0
-31: 							left: 3%
-32: >>>>>>> origin/master
-
-Backtrace:
-sass.sass:27
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/engine.rb:509:in `tree'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/engine.rb:396:in `_to_tree'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:415:in `run'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
-C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
-C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `load'
-C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: The line was indented 7 levels deeper than the previous line.\A         on line 27 of sass.sass\A \A 22: 					width: 100%\A 23: 					figure\A 24: 						&#unicornio\A 25: 							max-width: 250px\A 26: <<<<<<< HEAD\A 27: 							top: 300\A 28: 							left: 600\A 29: =======\A 30: 							top: 0\A 31: 							left: 3%\A 32: >>>>>>> origin/master"; }
+body {
+  font-family: Verdana, sans-serif;
+  color: white;
+}
+body h1 {
+  font-size: 40px;
+  text-align: center;
+}
+body #pagepiling #section1 {
+  width: 100%;
+}
+body #pagepiling #section1 section {
+  width: 1024px;
+  margin: 0 auto;
+}
+body #pagepiling #section1 section .relative-wrap {
+  position: relative;
+  width: 100%;
+}
+body #pagepiling #section1 section .relative-wrap figure#unicornio {
+  max-width: 250px;
+  top: 300;
+  left: 600;
+  top: 290;
+  left: 600;
+  z-index: 3;
+  position: absolute;
+}
+@media screen and (max-width: 864px) {
+  body #pagepiling #section1 section .relative-wrap figure#unicornio {
+    max-width: 180px;
+    top: 140;
+    left: 260;
+    top: 115;
+  }
+}
+body #pagepiling #section1 section .relative-wrap figure#unicornio img {
+  width: 100%;
+}
+body #pagepiling #section1 section .relative-wrap figure#pulpo {
+  max-width: 440px;
+  right: 250;
+  top: 3%;
+  right: 130;
+  top: 0;
+  z-index: 3;
+  position: absolute;
+}
+@media screen and (max-width: 864px) {
+  body #pagepiling #section1 section .relative-wrap figure#pulpo {
+    max-width: 220px;
+    left: 20%;
+  }
+}
+body #pagepiling #section1 section .relative-wrap figure#pulpo img {
+  width: 100%;
+}
+body #pagepiling #section1 section .relative-wrap figure#montana {
+  max-width: 800px;
+  left: 10%;
+  top: 0;
+  z-index: 1;
+  position: absolute;
+}
+@media screen and (max-width: 864px) {
+  body #pagepiling #section1 section .relative-wrap figure#montana {
+    max-width: 400px;
+    top: 10;
+    left: 3%;
+  }
+}
+body #pagepiling #section1 section .relative-wrap figure img {
+  width: 100%;
+}
+body #pagepiling #section1 section .relative-wrap h2 {
+  color: #282828;
+  z-index: 4;
+  position: absolute;
+  left: 490;
+  top: 225;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 35;
+}
+body #pagepiling #section1 section .relative-wrap h4 {
+  z-index: 4;
+  position: absolute;
+  left: 740;
+  top: 286;
+}
+body #pagepiling #section1 section .relative-wrap h4 a {
+  text-decoration: none;
+  color: white;
+}
+body #pagepiling #section1 section .relative-wrap .wrap-info {
+  z-index: 4;
+  position: absolute;
+  left: 140;
+  top: 230;
+}
+@media screen and (max-width: 864px) {
+  body #pagepiling #section1 section .relative-wrap .wrap-info {
+    max-width: 400px;
+    top: 150;
+    left: 6%;
+  }
+}
+body #pagepiling #section1 section .relative-wrap .wrap-info h3 {
+  color: #1565C0;
+  z-index: 4;
+  position: absolute;
+  top: -90;
+  left: 29;
+}
+@media screen and (max-width: 864px) {
+  body #pagepiling #section1 section .relative-wrap .wrap-info h3 {
+    max-width: 400px;
+    top: -45;
+    left: 0;
+    font-size: 16;
+  }
+}
+body #pagepiling #section1 section .relative-wrap .wrap-info ul li {
+  font-size: 12px;
+  list-style: none;
+  padding-bottom: 20px;
+  color: #1565C0;
+}
+@media screen and (max-width: 864px) {
+  body #pagepiling #section1 section .relative-wrap .wrap-info ul li {
+    max-width: 400px;
+    top: -45;
+    left: 6%;
+    font-size: 8;
+  }
+}
+body #pagepiling #section2 {
+  width: 100%;
+  height: 100%;
+}
+body #pagepiling #section2 section {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+body #pagepiling #section2 section p {
+  text-align: center;
+}
+body #pagepiling #section2 section figure {
+  text-align: center;
+}
+body #pagepiling #section3 {
+  width: 100%;
+  height: 100%;
+  font-size: 100px;
+}
+body #pagepiling #section3 section {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+}
+body #pagepiling #section3 section a {
+  color: rgba(255, 255, 255, 0.5);
+}
+body #pagepiling #section3 section a:hover {
+  color: white;
+}
+body #pagepiling #section3 section a span {
+  padding: 0 35px;
+}
+body #pagepiling #section4 {
+  width: 100%;
+  height: 100%;
+}
+body #pagepiling #section4 .wrap {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+body #pagepiling #section4 .wrap form {
+  border: none;
+  padding-top: 30px;
+}
+body #pagepiling #section4 .wrap form button {
+  cursor: pointer;
+}
