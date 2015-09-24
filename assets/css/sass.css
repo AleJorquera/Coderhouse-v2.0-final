@@ -1,0 +1,33 @@
+/*
+Error: The line was indented 7 levels deeper than the previous line.
+        on line 27 of sass.sass
+
+22: 					width: 100%
+23: 					figure
+24: 						&#unicornio
+25: 							max-width: 250px
+26: <<<<<<< HEAD
+27: 							top: 300
+28: 							left: 600
+29: =======
+30: 							top: 0
+31: 							left: 3%
+32: >>>>>>> origin/master
+
+Backtrace:
+sass.sass:27
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/engine.rb:509:in `tree'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/engine.rb:396:in `_to_tree'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:415:in `run'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `load'
+C:/Program Files (x86)/Prepros/resources/app/ruby/loader.rb:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: The line was indented 7 levels deeper than the previous line.\A         on line 27 of sass.sass\A \A 22: 					width: 100%\A 23: 					figure\A 24: 						&#unicornio\A 25: 							max-width: 250px\A 26: <<<<<<< HEAD\A 27: 							top: 300\A 28: 							left: 600\A 29: =======\A 30: 							top: 0\A 31: 							left: 3%\A 32: >>>>>>> origin/master"; }

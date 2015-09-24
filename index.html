@@ -1,0 +1,190 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Ejercicio Final Coderhouse" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<title>Ejercicio Final</title>
+		<link rel="stylesheet" href="assets/css/fv.css"/>
+		<link rel="stylesheet" type="text/css" href="assets/css/jquery.pagepiling.css" />
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.pagepiling.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="assets/css/sass.css">
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script type="text/javascript" src="assets/js/validator.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	    		menu: '#menu',
+	    		anchors: ['page1', 'page2', 'page3', 'page4'],
+			    sectionsColor: ['#29bcf6', '#42a5f5', '#5c6bc0', '#7e57c2'],
+			    navigation: {
+			    	'position': 'right',
+			   		'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
+			   	},
+			  
+			});
+
+
+	    });
+    </script>
+	</head>
+	<body>
+		<header><!--  
+			<ul id="menu">
+				<li data-menuanchor="page1" class="active"><a href="#page1"></a></li>
+				<li data-menuanchor="page2"><a href="#page2"></a></li>
+				<li data-menuanchor="page3"><a href="#page3"></a></li>
+				<li data-menuanchor="page4"><a href="#page4"></a></li>
+			</ul>-->
+		</header>
+		<section>
+			<div id="pagepiling">
+			    <div class="section" id="section1">
+			    	<section>
+			    		<div class="relative-wrap">
+<<<<<<< HEAD
+			    			<h2>Bienvenidos</h2>
+			    			<h4> <a href="#page4">Regístrate</a></h4>
+			    			<article class="wrap-info">
+			    			<h3>Portafolios!</h3>
+				    			<ul>
+				    				<li>Diseñadores Gráficos</li>
+				    				<li>Diseñadores Industriales</li>
+				    				<li>Ilustradores</li>
+				    				<li>Fotografos</li>
+			    			</ul>
+			    			</article>
+=======
+>>>>>>> origin/master
+					    	<figure id="unicornio">
+					    		<img src="assets/img/home_unicorn.png" alt="unicornio" />
+					    	</figure>
+					    	<figure id="pulpo">
+					    		<img src="assets/img/home_bubblesignupocto.png" alt="pulpo" />
+					    	</figure>	
+					    	<figure id="montana">	
+					    		<img src="assets/img/home_mountain.png" alt="montana" />
+					    	</figure>
+				    	</div>
+			    	</section>	
+
+			    </div>
+			    <div class="section" id="section2">
+			    	<section>
+				    	<h1>Features</h1>
+				    	<p>Si tus trabajos son revisados muchas veces, aparecerás aquí!</p>
+				    	<figure>
+				    		<img src="assets/img/1.png" alt="featured" />
+				    	</figure>
+			    	</section>
+			    </div>
+			    <div class="section" id="section3">
+			    	<section>
+			    		<h1>Conoce más sobre nosotros</h1>
+			    		<a href="https://www.facebook.com/"><span class="ion-social-facebook"></span></a>
+			    		<a href="https://www.github.com/"><span class="ion-social-github"></span></a>
+			    		<a href="https://www.tumblr.com/"><span class="ion-social-tumblr"></span></a>
+			    		<a href="https://www.linkedin.com/"><span class="ion-social-linkedin"></span></a>
+			    	</section>
+			    </div>
+			    <div class="section" id="section4">
+			    	<section class="wrap">
+			    		<h1>Regístrate gratis</h1>
+			    		<section class='form'>
+							<form action="" method="post" novalidate>
+								<fieldset>
+									<div class="item">
+										<label>
+											<span>Nombre</span>
+											<input data-validate-length-range="6" data-validate-words="2" name="name" placeholder="ej. Juanito Perez" required="required" />
+										</label>
+										<div class='tooltip help'>
+											<span>?</span>
+											<div class='content'>
+												<b></b>
+												<p>Debe ser 2 palabras (nombre, apellido)</p>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<label>
+											<span>email</span>
+											<input name="email" class='email' required="required" type="email" />
+										</label>
+									</div>
+									<div class="item">
+										<label>
+											<span>Password</span>
+											<input type="password" name="password" data-validate-length="6,8" required='required'>
+										</label>
+										<div class='tooltip help'>
+											<span>?</span>
+											<div class='content'>
+												<b></b>
+												<p>Debe ser entre 6 u 8 caracteres</p>
+											</div>
+										</div>
+									</div>
+									<div class="item">
+										<label>
+											<span>Elige tu url</span>
+											<input name="url" placeholder="usuario.hosting.com" required="required" type="url" />
+										</label>
+									</div>
+								<fieldset>
+									<input name="somethingHidden" required="required" type="text" style='display:none' />
+								</fieldset>
+								<button id='send' type='submit'>Registrarme</button>
+							</form>
+						</section>
+			    		
+			    	</section>
+
+
+			    </div>
+			</div>
+
+		</section>
+
+	</body>
+	<script src="js/multifield.js"></script>
+    <script src="js/validator.js"></script>
+ <script>
+
+  // validate a field on "blur" event, a 'select' on 'change' event & a '.reuired' classed multifield on 'keyup':
+  $('form')
+   .on('blur', 'input[required], input.optional, select.required', validator.checkField)
+   .on('change', 'select.required', validator.checkField)
+   .on('keypress', 'input[required][pattern]', validator.keypress);
+
+  $('.multi.required')
+   .on('keyup blur', 'input', function(){
+    validator.checkField.apply( $(this).siblings().last()[0] );
+   });
+
+  // bind the validation to the form submit event
+  //$('#send').click('submit');//.prop('disabled', true);
+
+  $('form').submit(function(e){
+   e.preventDefault();
+   var submit = true;
+   // evaluate the form using generic validaing
+   if( !validator.checkAll( $(this) ) ){
+    submit = false;
+   }
+
+   if( submit )
+    this.submit();
+   return false;
+  });
+
+ </script>
+</html>
+
